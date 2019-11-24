@@ -1,0 +1,23 @@
+{
+	"name": "radar",
+	"short_name": "radar",
+	"start_url": "https://msdeus.site/17077/Radar/index.html",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#fff",
+	"theme_color": "#673ab8",
+	"main.js": "bundle.js",
+	"./index.html": "./index.html",
+	"icons": [
+	  {
+	    "src": "https://msdeus.site/17077/Radar/images/android-chrome-192x192.png",
+	    "type": "image/png",
+	    "sizes": "192x192"
+	  },
+	  {
+	    "src": "https://msdeus.site/17077/Radar/images/android-chrome-512x512.png",
+	    "type": "image/png",
+	    "sizes": "512x512"
+	  }
+	]
+}

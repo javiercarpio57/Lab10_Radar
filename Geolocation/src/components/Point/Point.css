@@ -1,0 +1,50 @@
+.point {
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1vh solid white;
+    background-color: red;
+    width: calc(0.75vh);
+    height: calc(0.75vh);
+    cursor: pointer;
+    user-select: none;
+}
+
+.point .popupText {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 200%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.point .popupText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.point .show {
+    visibility: visible;
+    animation: fadeIn 0.8s;
+}
+
+.timeSize {
+    font-size: 10px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

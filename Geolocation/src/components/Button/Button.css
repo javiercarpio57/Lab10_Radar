@@ -1,0 +1,24 @@
+.circleButton {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    color: #fff!important;
+    font-size: 24px!important;
+    border: none;
+    width: 10vh;
+    height: 10vh;
+    vertical-align: middle;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 4vh!important;
+    outline: none;
+}
+
+.colorGreen {
+    background-color: #4CAF50!important;
+}
+
+.colorRed {
+    background-color: #f44336!important;
+}

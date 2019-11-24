@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Radar</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="description" content="It is a radar.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#317EFB">
+        <link rel="manifest" href="https://msdeus.site/17077/Radar/manifest.json" />
+        <link rel="apple-touch-icon" href="https://msdeus.site/17077/Radar/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="https://msdeus.site/17077/Radar/images/favicon.ico" />
+        <noscript>
+                <H1>Maybe you disable javascript</H1>
+        </noscript>
+    </head>
+
+    <body style="margin: 0;">
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                navigator.serviceWorker.register('./sw.js').then(function(registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+                });
+            }
+        </script>
+        <div id="root"></div>
+    <script type="text/javascript" src="bundle.js"></script></body>
+    
+</html>
